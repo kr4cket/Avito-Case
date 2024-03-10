@@ -1,10 +1,10 @@
 package app
 
 import (
-	"avitoTask/pkg/handlers"
-	"avitoTask/pkg/repository"
-	"avitoTask/pkg/server"
-	"avitoTask/pkg/services"
+	"avitoCase/pkg/handlers"
+	"avitoCase/pkg/repository"
+	"avitoCase/pkg/server"
+	"avitoCase/pkg/services"
 	"log"
 	"os"
 

@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"avitoTask/pkg/models"
+	"avitoCase/pkg/models"
 	"bytes"
 	"fmt"
 	"os"

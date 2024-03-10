@@ -1,7 +1,7 @@
 package main
 
 import (
-	"avitoTask/pkg/app"
+	"avitoCase/pkg/app"
 )
 
 // @title           Avito-Task API

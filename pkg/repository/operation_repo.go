@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"avitoTask/pkg/models"
+	"avitoCase/pkg/models"
 
 	"github.com/jmoiron/sqlx"
 	"github.com/lib/pq"

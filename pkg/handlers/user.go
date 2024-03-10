@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"avitoTask/pkg/helpers"
-	"avitoTask/pkg/models"
+	"avitoCase/pkg/helpers"
+	"avitoCase/pkg/models"
 	"net/http"
 	"strconv"
 

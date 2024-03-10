@@ -1,8 +1,8 @@
 package services
 
 import (
-	"avitoTask/pkg/models"
-	"avitoTask/pkg/repository"
+	"avitoCase/pkg/models"
+	"avitoCase/pkg/repository"
 )
 
 type OperationService struct {

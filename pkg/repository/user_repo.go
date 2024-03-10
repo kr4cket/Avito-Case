@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"avitoTask/pkg/models"
+	"avitoCase/pkg/models"
 	"crypto/sha1"
 	"fmt"
 	"math"

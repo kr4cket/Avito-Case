@@ -1,14 +1,14 @@
 package handlers
 
 import (
-	"avitoTask/pkg/services"
+	"avitoCase/pkg/services"
 
 	"github.com/gin-gonic/gin"
 
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 
-	_ "avitoTask/docs"
+	_ "avitoCase/docs"
 )
 
 type Handler struct {
