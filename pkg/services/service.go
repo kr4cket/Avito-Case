@@ -4,17 +4,16 @@ import (
 	"avitoCase/pkg/repository"
 )
 
-type Operation interface {
-	GetData()
+type CostMatrix interface {
+	GetData(userId int, locationId int, microcategoryId int) (map[string]string, error)
 }
 
 type Service struct {
-	Operation
+	CostMatrix
 }
 
 func NewService(repos *repository.Repository) *Service {
 	return &Service{
-
-		Operation: NewOperationService(repos.Operation),
+		CostMatrix: NewCostMatrixService(repos.CostMatrix),
 	}
 }

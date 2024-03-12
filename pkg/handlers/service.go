@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 // @Summary GetCost
@@ -13,5 +14,9 @@ import (
 // @Success 200
 // @Router /api/service/cost/:id [get]
 func (h *Handler) getCost(c *gin.Context) {
-	//	TODO Возврат стоимости
+	var data map[string]string
+
+	data, _ = h.services.GetData(100, 25, 15)
+
+	c.JSON(http.StatusOK, data)
 }

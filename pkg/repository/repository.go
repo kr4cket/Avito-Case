@@ -1,19 +1,21 @@
 package repository
 
-import (
-	"github.com/jmoiron/sqlx"
-)
-
-type Operation interface {
-	GetData()
+type CostMatrix interface {
+	GetData(userId int, locationId int, microcategoryId int) (map[string]string, error)
 }
 
 type Repository struct {
-	Operation
+	CostMatrix
 }
 
-func NewRepository(db *sqlx.DB) *Repository {
+//func NewRepository(db *sqlx.DB) *Repository {
+//	return &Repository{
+//		CostMatrix: NewCostMatrixPostgres(db),
+//	}
+//}
+
+func NewRepository(db int) *Repository {
 	return &Repository{
-		Operation: NewOperationPostgres(db),
+		CostMatrix: NewCostMatrixPostgres(db),
 	}
 }
