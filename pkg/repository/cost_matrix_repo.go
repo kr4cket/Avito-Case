@@ -1,15 +1,12 @@
 package repository
 
+import "github.com/jmoiron/sqlx"
+
 type CostMatrixPostgres struct {
-	//db *sqlx.DB
-	db int
+	db *sqlx.DB
 }
 
-//func NewCostMatrixPostgres(db *sqlx.DB) *CostMatrixPostgres {
-//	return &CostMatrixPostgres{db: db}
-//}
-
-func NewCostMatrixPostgres(db int) *CostMatrixPostgres {
+func NewCostMatrixPostgres(db *sqlx.DB) *CostMatrixPostgres {
 	return &CostMatrixPostgres{db: db}
 }
 
